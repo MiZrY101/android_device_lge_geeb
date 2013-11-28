@@ -37,9 +37,10 @@ PRODUCT_COPY_FILES += \
 
 # Telephony Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    telephony.lteOnCdmaDevice=1 \
+    telephony.lteOnCdmaDevice=0 \
     ro.telephony.default_network=9 \
-    ro.ril.def.preferred.network=9
+    telephony.lteOnGsmDevice=1
 
 # Enable Torch
 PRODUCT_PACKAGES += Torch
+

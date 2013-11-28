@@ -37,6 +37,13 @@ PRODUCT_COPY_FILES += \
 
 # Telephony Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    telephony.lteOnCdmaDevice=1 \
+    telephony.lteOnCdmaDevice=0 \
     ro.telephony.default_network=9 \
+<<<<<<< HEAD
     ro.ril.def.preferred.network=9
+
+# Enable Torch
+PRODUCT_PACKAGES += Torch
+=======
+    telephony.lteOnGsmDevice=1
+>>>>>>> c79eee6... Enable lte correctly
